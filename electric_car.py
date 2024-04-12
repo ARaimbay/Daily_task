@@ -17,15 +17,15 @@ class Car:
     def increment_odometer(self, miles):
         self.odometer_reading += miles
 class Battery:
-    def __init__(self, battery_size=40):
+    def __init__(self, battery_size=50):
         self.battery_size = battery_size
     def describe_battery(self):
         print(f"This car has a {self.battery_size}-Kwh battery")
     def get_range(self):
-        if self.battery_size == 40:
+        if self.battery_size == 50:
             range = 150
         elif self.battery_size == 65:
-            range =225
+            range = 225
         print(f"This car can go about {range} miles on a full charge")
     def upgrade_battery(self, battery_size):
         if battery_size < 65:
